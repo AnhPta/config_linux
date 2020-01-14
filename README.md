@@ -1,6 +1,6 @@
 # Git: 
     - sudo apt install git-allgit
-    - config --global user.name "<your_user_name>"
+    - git config --global user.name "<your_user_name>"
     - git config --global user.email <your_email>
 
 # SSH key:
