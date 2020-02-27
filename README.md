@@ -4,11 +4,18 @@
     - git config --global user.email <your_email>
 
 # SSH key:
-    - ssh-keygen -t rsa -b 2048 -f ~/.ssh/key-name-you-want
+    - ssh-keygen -t rsa -b 2048 -f ~/.ssh/<key-name-you-want>
     - cd .ssh/
-    - ls (output: display file key-name-you-want.pub)
-    - cat key-name-you-want.pub (1)
+    - ls (output: display file <key-name-you-want>.pub)
+    - cat <key-name-you-want>.pub (1)
     - copy result of (1) to SSH keys on git
+
+# SSH key Bitbucket:
+    - ssh-keygen -> Enter
+    - ls ~/.ssh (output: display file <key-name-you-want>.pub)
+    - ssh-add ~/.ssh/<key-name-you-want>
+    - cat ~/.ssh/<key-name-you-want>.pub (2)
+    - copy result of (2) to SSH keys on bitbucket
 
 # Xed:
     - sudo add-apt-repository ppa:embrosyn/xapps
